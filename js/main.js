@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
+
   signIn.addEventListener('click', function(e){
     e.preventDefault();
     modal.style.display = 'block'
@@ -22,5 +23,14 @@ document.addEventListener('DOMContentLoaded', function(){
     e.preventDefault();
     error.classList.add("error");
     error2.classList.add("error");
+  })
+  error.addEventListener('click', function(e){
+    e.preventDefault();
+    error.style.outline = "none"
+  })
+
+  error2.addEventListener('click', function(e){
+    e.preventDefault();
+    error2.style.outline = "none"
   })
 })
